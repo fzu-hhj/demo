@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class AdminController {
-//    @Autowired
-//    AdminMapper adminMapper;
-//    @RequestMapping("/admin/{id}")
-//    public Admin getAdmin(@PathVariable("id") Integer id){
-//        return adminMapper.getAdminById(id);
-//    }
+    @Autowired
+    AdminMapper adminMapper;
+    @RequestMapping("/admin/{id}")
+    public Admin getAdmin(@PathVariable("id") Integer id){
+        return adminMapper.getAdminById(id);
+    }
 
     @Autowired
     AdminMapper2 adminMapper2;
